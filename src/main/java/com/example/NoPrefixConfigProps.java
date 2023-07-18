@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * *******************************
  */
 @Component
-@ConfigurationProperties(prefix = "")
+@ConfigurationProperties
 public class NoPrefixConfigProps {
     String noPrefixStrProp;
 
@@ -18,6 +18,7 @@ public class NoPrefixConfigProps {
         return noPrefixStrProp;
     }
 
+    // no navigation to application.properties; setter is shown as not used
     public void setNoPrefixStrProp(String noPrefixStrPropArg) {
         noPrefixStrProp = noPrefixStrPropArg;
     }

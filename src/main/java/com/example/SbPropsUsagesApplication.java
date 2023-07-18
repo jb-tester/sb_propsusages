@@ -31,8 +31,8 @@ public class SbPropsUsagesApplication  implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
         System.out.println("=======================================");
-        //System.out.println(noPrefixConfigProps.getNoPrefixStrProp());
-        //System.out.println(props1.getStrProp());
+        System.out.println(noPrefixConfigProps.getNoPrefixStrProp());
+        System.out.println(props1.getStrProp());
         System.out.println("=======================================");
     }
 }
