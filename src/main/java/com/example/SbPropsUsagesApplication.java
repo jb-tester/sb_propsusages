@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.env.Environment;
 
 @SpringBootApplication
 @EnableConfigurationProperties
@@ -17,6 +18,8 @@ public class SbPropsUsagesApplication  implements CommandLineRunner {
 
     @Autowired
     private DuplicatedProps1 props1;
+    @Autowired
+    private Environment environment;
 
     @Bean
     @ConfigurationProperties(prefix = "my.custom.props")
@@ -33,6 +36,7 @@ public class SbPropsUsagesApplication  implements CommandLineRunner {
         System.out.println("=======================================");
         System.out.println(noPrefixConfigProps.getNoPrefixStrProp());
         System.out.println(props1.getStrProp());
+        System.out.println(environment.getProperty("my.custom.props.sp1"));
         System.out.println("=======================================");
     }
 }
