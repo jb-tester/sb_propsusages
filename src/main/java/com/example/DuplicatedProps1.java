@@ -7,13 +7,23 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "myprops.duplicated")
 public class DuplicatedProps1 {
-    String strProp;
+    String duplicatedProp;
 
-    public String getStrProp() {
-        return strProp;
+    String samePrefixUniqueProp1;
+
+    public String getDuplicatedProp() {
+        return duplicatedProp;
     }
 
-    public void setStrProp(String noPrefixStrPropArg) {
-        strProp = noPrefixStrPropArg;
+    public void setDuplicatedProp(String duplicatedProp) {
+        this.duplicatedProp = duplicatedProp;
+    }
+
+    public String getSamePrefixUniqueProp1() {
+        return samePrefixUniqueProp1;
+    }
+
+    public void setSamePrefixUniqueProp1(String samePrefixUniqueProp1) {
+        this.samePrefixUniqueProp1 = samePrefixUniqueProp1;
     }
 }

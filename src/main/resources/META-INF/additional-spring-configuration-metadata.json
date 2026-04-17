@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "additional.metadata.prop1",
+      "type": "java.lang.String",
+      "description": "Description for additional.metadata.prop1."
+  }
+] }

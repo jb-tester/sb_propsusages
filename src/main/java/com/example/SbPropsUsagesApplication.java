@@ -13,19 +13,14 @@ import org.springframework.core.env.Environment;
 @EnableConfigurationProperties
 public class SbPropsUsagesApplication  implements CommandLineRunner {
 
-    @Autowired
-    private NoPrefixConfigProps noPrefixConfigProps;
 
-    @Autowired
-    private DuplicatedProps1 props1;
-    @Autowired
-    private Environment environment;
+    private final UsePropertiesAsConfigurationPropertiesFields usePropertiesAsConfigurationPropertiesFields;
 
-    @Bean
-    @ConfigurationProperties(prefix = "my.custom.props")
-    public CustomProps1 myCustomProps1(){
-        return new CustomProps1();
-    };
+    public SbPropsUsagesApplication(UsePropertiesAsConfigurationPropertiesFields usePropertiesAsConfigurationPropertiesFields) {
+        this.usePropertiesAsConfigurationPropertiesFields = usePropertiesAsConfigurationPropertiesFields;
+    }
+
+
 
     public static void main(String[] args) {
         SpringApplication.run(SbPropsUsagesApplication.class, args);
@@ -33,10 +28,6 @@ public class SbPropsUsagesApplication  implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        System.out.println("=======================================");
-        System.out.println(noPrefixConfigProps.getNoPrefixStrProp());
-        System.out.println(props1.getStrProp());
-        System.out.println(environment.getProperty("my.custom.props.sp1"));
-        System.out.println("=======================================");
+        usePropertiesAsConfigurationPropertiesFields.displayPropeties();
     }
 }

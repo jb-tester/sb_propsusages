@@ -1,0 +1,22 @@
+no-prefix-str-prop: profile2  string property w/o prefix
+
+myprops:
+  duplicated:
+    duplicated-prop: profile2  duplicated property that exists in both same-prefix config files
+    same-prefix-unique-prop1 : profile2  unique property from same-prefix config file1
+    same-prefix-unique-prop2 : profile2  unique property from same-prefix config file2
+
+
+my:
+ custom:
+   props:
+     sp1: profile2  sp1 configured as @ConfigurationProperties class property
+     sp2: profile2  sp2 configured as @ConfigurationProperties class property
+
+additional:
+  metadata:
+    prop1 : profile2 property defined in json only
+
+local:
+  prop1 : profile2  property without definition
+  prop2 : profile2  ${local.prop1}${my.custom.props.sp1}${additional.metadata.prop1}
