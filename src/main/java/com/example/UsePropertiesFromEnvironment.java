@@ -24,6 +24,10 @@ public class UsePropertiesFromEnvironment {
         System.out.println(environment.getProperty("my.custom.props.sp2"));
         System.out.println(environment.getProperty("additional.metadata.prop1"));
         System.out.println(environment.getProperty("local.prop1"));
+        System.out.println(environment.getProperty("spring.application.name"));
+        System.out.println(environment.getProperty("spring.task.execution.mode"));
+        System.out.println(environment.getProperty("spring.profiles.default"));
+        System.out.println(environment.getProperty("spring.main.banner-mode"));
         System.out.println("===================");
     }
 

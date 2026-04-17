@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class CustomPropertiesConfiguration {
     @Bean
     @ConfigurationProperties(prefix = "my.custom.props")
-    public CustomProps1 myCustomProps1(){
-        return new CustomProps1();
+    public CustomConfigProps myCustomProps1(){
+        return new CustomConfigProps();
     };
 }
