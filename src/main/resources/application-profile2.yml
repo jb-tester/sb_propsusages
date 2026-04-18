@@ -19,4 +19,3 @@ additional:
 
 local:
   prop1 : profile2  property without definition
-  prop2 : profile2  ${local.prop1}${my.custom.props.sp1}${additional.metadata.prop1}
