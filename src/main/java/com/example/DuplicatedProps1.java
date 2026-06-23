@@ -4,7 +4,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 
-@Component
 @ConfigurationProperties(prefix = "myprops.duplicated")
 public class DuplicatedProps1 {
     String duplicatedProp;

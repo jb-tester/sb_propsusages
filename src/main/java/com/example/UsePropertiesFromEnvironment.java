@@ -22,6 +22,8 @@ public class UsePropertiesFromEnvironment {
         System.out.println(environment.getProperty("myprops.duplicated.same-prefix-unique-prop2"));
         System.out.println(environment.getProperty("my.custom.props.sp1"));
         System.out.println(environment.getProperty("my.custom.props.sp2"));
+        System.out.println(environment.getProperty("my.ctor.props.prop1"));
+        System.out.println(environment.getProperty("my.ctor.props.prop2"));
         System.out.println(environment.getProperty("additional.metadata.prop1"));
         System.out.println(environment.getProperty("local.prop1"));
         System.out.println(environment.getProperty("spring.application.name"));

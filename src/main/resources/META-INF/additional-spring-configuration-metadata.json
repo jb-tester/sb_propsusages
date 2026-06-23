@@ -4,5 +4,10 @@
       "name": "additional.metadata.prop1",
       "type": "java.lang.String",
       "description": "Description for additional.metadata.prop1."
-  }
+  },
+    {
+      "name": "additional.metadata.prop2",
+      "type": "java.lang.String",
+      "description": "Description for additional.metadata.prop2."
+    }
 ] }

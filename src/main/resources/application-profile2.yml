@@ -8,10 +8,13 @@ myprops:
 
 
 my:
- custom:
+  custom:
    props:
      sp1: profile2  sp1 configured as @ConfigurationProperties class property
      sp2: profile2  sp2 configured as @ConfigurationProperties class property
+  ctor:
+    props:
+      prop1: profile2 prop1 configured as @ConfigurationProperties class ctor arg
 
 additional:
   metadata:

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
-@EnableConfigurationProperties
+@EnableConfigurationProperties({NoPrefixConfigProps.class, DuplicatedProps2.class, DuplicatedProps1.class, CtorConfigProps.class})
 public class SbPropsUsagesApplication  implements CommandLineRunner {
 
 

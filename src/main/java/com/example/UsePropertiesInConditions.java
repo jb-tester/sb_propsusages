@@ -9,6 +9,12 @@ import org.springframework.context.annotation.Configuration;
 public class UsePropertiesInConditions {
 
     @Bean
+    @ConditionalOnProperty("my.ctor.props.prop1")
+    public SomeBean someBean0() {
+        return new SomeBean("conditional bean depending on my.ctor.props.prop1");
+    }
+
+    @Bean
     @ConditionalOnProperty("my.custom.props.sp1")
     public SomeBean someBean1() {
         return new SomeBean("conditional bean depending on my.custom.props.sp1");

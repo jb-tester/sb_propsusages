@@ -11,6 +11,10 @@ public class UsePropertiesAsValues {
     String normal_sp1;
     @Value("${my.custom.props.sp2}")
     String normal_sp2;
+    @Value("${my.ctor.props.prop1}")
+    String normal_ctor_prop1;
+    @Value("${my.ctor.props.prop2}")
+    String normal_ctor_prop2;
     @Value("${myprops.duplicated.duplicated-prop}")
     String duplicatedProp;
     @Value("${myprops.duplicated.same-prefix-unique-prop1}")
@@ -21,6 +25,8 @@ public class UsePropertiesAsValues {
     String no_prefix_p1;
     @Value("${additional.metadata.prop1}")
     String additional_metadata_prop1;
+    @Value("${additional.metadata.prop2}")
+    String additional_metadata_prop2;
     @Value("${local.prop1}")
     String local_prop1;
     @Value("${local.prop2}")

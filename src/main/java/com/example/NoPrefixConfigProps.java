@@ -4,7 +4,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 
-@Component
 @ConfigurationProperties
 public class NoPrefixConfigProps {
     String noPrefixStrProp;
@@ -13,6 +12,7 @@ public class NoPrefixConfigProps {
         return noPrefixStrProp;
     }
 
+    // incorrect representation for property name in the popup title (`.noPrefixprop`)
     public void setNoPrefixStrProp(String noPrefixStrPropArg) {
         noPrefixStrProp = noPrefixStrPropArg;
     }
