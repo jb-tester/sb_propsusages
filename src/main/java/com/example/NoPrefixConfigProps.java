@@ -12,7 +12,7 @@ public class NoPrefixConfigProps {
         return noPrefixStrProp;
     }
 
-    // incorrect representation for property name in the popup title (`.noPrefixprop`)
+    // incorrect representation for property name in the popup title (`.noPrefixStrProp`)
     public void setNoPrefixStrProp(String noPrefixStrPropArg) {
         noPrefixStrProp = noPrefixStrPropArg;
     }
