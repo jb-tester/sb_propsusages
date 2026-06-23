@@ -1,0 +1,4 @@
+my:
+  custom:
+    props:
+      sp1: from test application.yaml
