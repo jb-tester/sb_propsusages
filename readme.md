@@ -56,17 +56,19 @@ Navigation to usages is not possible
 
 1. the usages from tests appear on top. It would be better to keep the definition place (`@ConfigurationProperties` class, or `additional-spring-configuration-metadata.json` ) on top.
 2. the usage in the main application.properties files appears on the bottom of the list. It would be nice to show it above the usages (first position - property definition class/file, then the application.* files starting from the main, then - usages in other places)
-3. the representation and behavior is different in case of properties defined in the application.* files only (see `local.prop1` property):
+   [IDEA-390868](https://youtrack.jetbrains.com/issue/IDEA-390868) - for all sorting issues
+3. the representation and behavior is different in case of properties defined in the application.* files only (see `local.prop1` property) [IDEA-390874](https://youtrack.jetbrains.com/issue/IDEA-390874):
     - The Find Usages popup is shown for property key in application.* files; 
     - the similar keys in profile-specific files are not found;
     - the popup shown for the property usages display the keys with "property" icon, no Spring-specific ones; 
     - inconsistent representation b/w properties and yaml
+     
 4. the gutter navigation icon for constructor arguments in ctor-based `@ConfigurationProperties` doesn't show usages except the ones from application.* files.
-   The gutter icon for setters in the setter-based `@ConfigurationProperties` displays all usages
-5. for the keys defined in `additional-spring-configuration-metadata.json` the definition is displayed without file name in the navigation popup
+   The gutter icon for setters in the setter-based `@ConfigurationProperties` displays all usages [IDEA-390869](https://youtrack.jetbrains.com/issue/IDEA-390869)
+5. for the keys defined in `additional-spring-configuration-metadata.json` the definition is displayed without file name in the navigation popup [IDEA-390870](https://youtrack.jetbrains.com/issue/IDEA-390870)
 6. it is still impossible to navigate from `additional-spring-configuration-metadata.json` back to application.*/usages
-7. incorrect representation for prefix-less properties in the popup title in the configuration class (like `.property-name`)
+7. incorrect representation for prefix-less properties in the popup title in the configuration class (like `.property-name`) [IDEA-390873](https://youtrack.jetbrains.com/issue/IDEA-390873)
 8. it is still impossible to navigate back to application.*/usages from the library CP classes
-9. the popup shown for the property usage displays invocation place in the usages list (the only exception is the popup for the CP class setter/ctor gutter)
+9. the popup shown for the property usage displays invocation place in the usages list (the only exception is the popup for the CP class setter/ctor gutter) [IDEA-390872](https://youtrack.jetbrains.com/issue/IDEA-390872)
 10. inconsistent representation for usages in placeholders in all places vs in application.*
 11. usage in `@ConditionalOnProperty` is not found in case of prefix+name separation
