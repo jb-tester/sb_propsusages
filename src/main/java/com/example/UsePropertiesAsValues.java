@@ -46,5 +46,6 @@ public class UsePropertiesAsValues {
     String default_profile;
     @Value("${spring.task.execution.mode}")
     String task_execution_mode;
-
+    @Value("${logging.file}")
+    String loggingFile;
 }
