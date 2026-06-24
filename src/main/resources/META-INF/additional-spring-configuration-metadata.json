@@ -9,5 +9,35 @@
       "name": "additional.metadata.prop2",
       "type": "java.lang.String",
       "description": "Description for additional.metadata.prop2."
+    },
+    {
+      "name": "additional.metadata.prop3",
+      "type": "java.lang.String",
+      "description": "Description for additional.metadata.prop3."
+    },
+    {
+      "name": "additional.metadata.deprecated.pr1",
+      "type": "java.lang.String",
+      "description": "deprecated property defined in json only.",
+      "deprecated": true,
+      "deprecation": {
+        "level": "warning",
+        "replacement": "additional.metadata.replacement.pr1"
+      }
+    },
+    {
+      "name": "additional.metadata.replacement.pr1",
+      "type": "java.lang.String",
+      "description": "Replacement for additional.metadata.deprecated.pr1."
+
+    },
+    {
+      "name": "additional.metadata.deprecated.pr2",
+      "type": "java.lang.String",
+      "description": "deprecated property defined in json only.",
+      "deprecated": true,
+      "deprecation": {
+        "level": "error"
+      }
     }
 ] }

@@ -72,3 +72,5 @@ Navigation to usages is not possible
 9. the popup shown for the property usage displays invocation place in the usages list (the only exception is the popup for the CP class setter/ctor gutter) [IDEA-390872](https://youtrack.jetbrains.com/issue/IDEA-390872)
 10. inconsistent representation for usages in placeholders in all places vs in application.*
 11. usage in `@ConditionalOnProperty` is not found in case of prefix+name separation
+12. for properties declared in the `additional-spring-configuration-metadata.json` file only the usage inside application*.yaml is ignored [IDEA-390905](https://youtrack.jetbrains.com/issue/IDEA-390905)
+    

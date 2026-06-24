@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UsePropertiesAsValues {
 
-    @Value("${my.custom.props.sp1}")
+    @Value("${my.custom.props.sp1:default}")
     String normal_sp1;
     @Value("${my.custom.props.sp2}")
     String normal_sp2;
@@ -27,6 +27,12 @@ public class UsePropertiesAsValues {
     String additional_metadata_prop1;
     @Value("${additional.metadata.prop2}")
     String additional_metadata_prop2;
+    @Value("${additional.metadata.prop3}")
+    String additional_metadata_prop3;
+    @Value("${additional.metadata.deprecated.pr1}")
+    String deprecatedJsonProp1;
+    @Value("${additional.metadata.deprecated.pr2:default}")
+    String deprecatedJsonProp2;
     @Value("${local.prop1}")
     String local_prop1;
     @Value("${local.prop2}")
