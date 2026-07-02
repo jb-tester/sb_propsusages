@@ -12,9 +12,11 @@ my:
    props:
      sp1: profile2  sp1 configured as @ConfigurationProperties class property
      sp2: profile2  sp2 configured as @ConfigurationProperties class property
+     sp4: profile2  sp4 configured as @ConfigurationProperties class property; has no usages
   ctor:
     props:
       prop1: profile2 prop1 configured as @ConfigurationProperties class ctor arg
+      prop4: profile2 prop1 configured as @ConfigurationProperties class ctor arg; has no usages
 
 additional:
   metadata:

@@ -8,6 +8,24 @@ package com.example;
 public class CustomConfigProps {
     String sp1;
     String sp2;
+    String sp3;
+    String sp4;
+
+    public String getSp4() {
+        return sp4;
+    }
+
+    public void setSp4(String sp4) {
+        this.sp4 = sp4;
+    }
+
+    public String getSp3() {
+        return sp3;
+    }
+
+    public void setSp3(String sp3) {
+        this.sp3 = sp3;
+    }
 
     public void setSp1(String sp1) {
         this.sp1 = sp1;
