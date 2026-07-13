@@ -10,3 +10,5 @@ my:
 additional:
   metadata:
     prop3: prop3 property defined in json only (and in yaml only)
+local:
+  prop3: ${my.ctor.props.prop1}

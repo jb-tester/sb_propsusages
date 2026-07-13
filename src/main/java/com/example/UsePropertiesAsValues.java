@@ -37,6 +37,8 @@ public class UsePropertiesAsValues {
     String local_prop1;
     @Value("${local.prop2}")
     String local_prop2;
+    @Value("${local.prop3}")
+    String propertyFromYaml;
 
     @Value("${spring.application.name}")
     String spring_application_name;
