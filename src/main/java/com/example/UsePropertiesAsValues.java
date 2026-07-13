@@ -48,4 +48,11 @@ public class UsePropertiesAsValues {
     String task_execution_mode;
     @Value("${logging.file}")
     String loggingFile;
+    @Value("${my.ctor.props.prop5:foo}")
+    String notSetCustomProperty;
+    @Value("${my.ctor.props.prop6:foo}")
+    String notSetCustomPropertyUsedAlsoInCondition;
+    @Value("${server.port:8080}")
+    String notSetLibProperty;
+
 }

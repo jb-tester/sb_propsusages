@@ -1,0 +1,9 @@
+my:
+  custom:
+    props:
+      sp2: sp2 configured as @ConfigurationProperties class property; set in imported YAML;
+      sp4: sp4 configured as @ConfigurationProperties class property; set in imported YAML; has no usages
+
+  ctor:
+    props:
+      prop4: prop4 configured as @ConfigurationProperties class ctor arg; set in imported YAML; has no usages

@@ -32,6 +32,7 @@ public class UsePropertiesFromEnvironment {
         System.out.println(environment.getProperty("spring.task.execution.mode"));
         System.out.println(environment.getProperty("spring.profiles.default"));
         System.out.println(environment.getProperty("spring.main.banner-mode"));
+        System.out.println(environment.getProperty("my.ctor.props.prop5"));
         System.out.println("===================");
     }
 

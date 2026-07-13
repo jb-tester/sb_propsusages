@@ -63,4 +63,10 @@ public class UsePropertiesInConditions {
     public SomeBean someBean8() {
         return new SomeBean("conditional bean depending on local.prop1");
     }
+
+    @Bean
+    @ConditionalOnProperty("my.ctor.props.prop6")
+    public SomeBean someBean9() {
+        return new SomeBean("conditional bean depending on not set my.ctor.props.prop6");
+    }
 }

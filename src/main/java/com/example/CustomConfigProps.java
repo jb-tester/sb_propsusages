@@ -1,5 +1,7 @@
 package com.example;
 
+import org.springframework.boot.context.properties.bind.DefaultValue;
+
 // navigation via setter method gutters navigates to all usages of the property
 // Problems:
 // - no sorting by categories - fixed
@@ -10,6 +12,16 @@ public class CustomConfigProps {
     String sp2;
     String sp3;
     String sp4;
+
+    String sp5 = "default value for not set property";
+
+    public String getSp5() {
+        return sp5;
+    }
+
+    public void setSp5(String sp5) {
+        this.sp5 = sp5;
+    }
 
     public String getSp4() {
         return sp4;
