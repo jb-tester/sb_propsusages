@@ -7,3 +7,6 @@ my:
   ctor:
     props:
       prop4: prop4 configured as @ConfigurationProperties class ctor arg; set in imported YAML; has no usages
+additional:
+  metadata:
+    prop3: prop3 property defined in json only (and in yaml only)

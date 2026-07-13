@@ -21,7 +21,6 @@ my:
 additional:
   metadata:
     prop1 : profile2 property defined in json only
-    prop3 : profile2 property defined in json only (and in yaml only)
     deprecated:
       pr1: profile2 deprecated property defined in json only
       pr2: profile2 deprecated property defined in json only (and in yaml only)

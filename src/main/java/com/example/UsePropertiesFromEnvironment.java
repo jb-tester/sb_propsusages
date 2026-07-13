@@ -25,8 +25,7 @@ public class UsePropertiesFromEnvironment {
         System.out.println(environment.getProperty("my.ctor.props.prop1"));
         System.out.println(environment.getProperty("my.ctor.props.prop2"));
         System.out.println(environment.getProperty("additional.metadata.prop1"));
-        // commented-out to check the case with json+yaml+single usage
-      //  System.out.println(environment.getProperty("additional.metadata.prop3"));
+        System.out.println(environment.getProperty("additional.metadata.prop3"));
         System.out.println(environment.getProperty("local.prop1"));
         System.out.println(environment.getProperty("spring.application.name"));
         System.out.println(environment.getProperty("spring.task.execution.mode"));
